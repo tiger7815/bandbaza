@@ -28,6 +28,7 @@
             "description": "Telethon string session.",
             "value": ""
         },
+      },
     "buildpacks": [
         {
             "url": "heroku/python"
