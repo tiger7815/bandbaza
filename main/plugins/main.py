@@ -4,7 +4,7 @@ import time, os
 
 from .. import bot as Drone
 from .. import userbot
-from .. import FORCESUB as fs
+#from .. import FORCESUB as fs
 
 from telethon import events
 from telethon.tl.types import DocumentAttributeVideo
@@ -22,10 +22,10 @@ async def clone(event):
             return
     except TypeError:
         return
-    s, r = await force_sub(event.client, fs, event.sender_id)
-    if s == True:
-        await event.reply(r)
-        return
+    #s, r = await force_sub(event.client, fs, event.sender_id)
+    #if s == True:
+        #await event.reply(r)
+        #return
     edit = await event.reply('Trying to process.')
     if 't.me/+' in link:
         x, y = await join(userbot, link)
